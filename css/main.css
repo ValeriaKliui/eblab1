@@ -10,71 +10,85 @@ a{
 	text-decoration: none;
 }
 @font-face{
-	 font-family: "Roboto-Regular";
-	 src: url("../fonts/Roboto-Regular.woff") format("woff");
+	font-family: "Roboto-Regular";
+	src: url("../fonts/Roboto-Regular.woff") format("woff");
 }
 body{
 	font-family: "Roboto-Regular";
 }
 .header{
-	background-color:  rgba(95, 97, 88, 0.5);
 	display: flex;
-	position: relative;
-	 align-items: center;
-	 padding: 32px 92px;
-	 z-index: 2;
-	 width: 100%;
 }
-.header__info+.navbar{
-	margin-left: 153px;
+.header__left{
+	background-color: #5F6158;
+	width: 440px;
+	height: 200px;
 }
 .header__info{
 	max-width: 250px;
+	display: flex;
+	align-items: center;
 }
-.header__logo{
-	font-size: 50px;
+.header__name{
+	font-size: 45px;
 	color: #373832;
-line-height: 59px;
+	line-height: 59px;
 }
-.header__logo:hover{
-	font-size: 55px;
+.header__name:hover{
+	font-size: 50px;
 }
 .header__text{
-	font-size: 30px;
+	font-size: 20px;
 	color: #373832;
 }
-.navbar{
-	background-color:  #E1AA73;	
-	width: 56%;
-	font-size: 30px;
+.logo__text{
+	left: -18px;
+	position: relative;
+}
+.header__right{
+	background-color: rgba(95, 97, 88, 0.5);
+	width: calc(100% - 440px);
+	height: 200px;
+	display: flex;
+	z-index: 1;
+}
+.navbar{	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+	background-color: #E1AA73;
+	font-size: 20px;
 	padding: 16px 19px;
 	text-align: center;
+	width: 70%;
+	height: 67px;
 }
 .navbar__item{
-display: inline;
-padding: 0 7px;
+	display: inline;
+}
+.navbar__item + .navbar__item{
+	padding: 0 0 0 70px;
 }
 .navbar__link{
- color: #373832;
+	color: #373832;
 }
 .navbar__link:hover{
-color: #d70a53;
+	color: #d70a53;
 }
 .aside{
 	background-color: #8C8E80;
-	position: absolute;
-	top: 0;
+	position: relative;
 	width: 440px;
-	font-size: 30px;
+	font-size: 20px;
 	color: #373832;
-	padding: 56px 65px;
-	line-height: 35px;
-	height: 864px;
+	padding: 30px 65px;
+	line-height: 23px;
+	height: 651px;
 }
 .aside__intro{
-position: relative;
-top: 200px;	
-width: 350px;
+	position: relative;
+	width: 300px;
 }
 .aside__item{
 	margin: 20px 0;
@@ -82,73 +96,70 @@ width: 350px;
 .button{
 	background-color: #CC8400;
 	position: relative;
-	top: 250px;
-	left: -15px;
-	width: 370px;
-height: 72px;
-border-radius: 15px;
-color: #EDF1D5;
-font-size: 30px;
-cursor: pointer;
-border: 0;
+	width: 314px;
+	height: 72px;
+	border-radius: 15px;
+	color: #EDF1D5;
+	cursor: pointer;
+	border: 0;
+	font-size: 20px;
 }
 .button:hover{
 	background-color: #3e8e41;
 }
 .gallery__background{
-background-color: #8C8E80;;
-position: relative;
-height: 651px;
-left: 439px;
-width: calc(100% - 439px);
+	background-color: #8C8E80;;
+	position: relative;
+	height: 651px;
+	left: 439px;
+	width: calc(100% - 439px);
 }
 .gallery__img{
 	background-image: url("../img/main.jpg");
-     background-repeat: no-repeat;
-     background-size: cover;
-     width: 1079px;
-    height: 864px;
-    position: absolute;
-    left: 440px;
-    top: 0;
-    z-index: 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 1079px;
+	height: 864px;
+	position: absolute;
+	left: 440px;
+	top: 0;
+	z-index: 0;
 }
 .footer{
-background-color: #E1AA73;
-width: 100%;
-position: relative;
-text-align: right;
-display: flex;
-align-items: center;
-justify-content: space-between;
-padding: 20px 0;
+	background-color: #E1AA73;
+	width: 100%;
+	position: relative;
+	text-align: right;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 30px 0;
 }
 .footer__info{
-font-family: 'Roboto', sans-serif;
-font-size: 30px;
-font-style: normal;
-font-size: 30px;
-line-height: 35.16px;
-font-weight: 100;
-width: 450px;
-text-align: right;
-margin-right: 40px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	line-height: 23px;
+	font-weight: 100;
+	width: 300px;
+	text-align: right;
+	margin-right: 40px;
 }
 .footer__list{
 	display:  flex;
 }
 .footer__item{
-display: flex;
-border-radius: 30px;
-background: #C4C4C4;position: relative;
-left: 175%;
+	display: flex;
+	border-radius: 30px;
+	background: #C4C4C4;position: relative;
+	left: 175%;
 }
 .footer__link{
-cursor: pointer;
-width: 60px;
-height: 60px;
-color: transparent;
+	cursor: pointer;
+	width: 60px;
+	height: 60px;
+	color: transparent;
 }
 .footer__item + .footer__item{
-margin-left: 30px;
+	margin-left: 30px;
 }

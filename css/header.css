@@ -1,0 +1,74 @@
+html{
+	box-sizing: border-box;
+}
+*,
+*::after,
+*::before{
+	box-sizing: inherit;
+}
+a{
+	text-decoration: none;
+}
+@font-face{
+	 font-family: "Roboto-Regular";
+	 src: url("../fonts/Roboto-Regular.woff") format("woff");
+}
+body{
+	font-family: "Roboto-Regular";
+}
+.header{
+	display: flex;
+}
+.header__left{
+	background-color: #5F6158;
+	width: 440px;
+	height: 200px;
+}
+.header__info{
+	max-width: 250px;
+	display: flex;
+	align-items: center;
+}
+.header__name{
+	font-size: 45px;
+	color: #373832;
+line-height: 59px;
+}
+.header__text{
+	font-size: 20px;
+	color: #373832;
+}
+.logo__text{
+		left: -18px;
+			position: relative;
+}
+.header__right{
+	background-color: rgba(95, 97, 88, 0.5);
+	width: calc(100% - 440px);
+	height: 200px;
+	display: flex;
+}
+.navbar{	
+	display: flex;
+	align-items: center;
+		justify-content: center;
+		margin: auto;
+		background-color: #E1AA73;
+			font-size: 20px;
+	padding: 16px 19px;
+	text-align: center;
+	width: 70%;
+	height: 67px;
+}
+.navbar__item{
+	display: inline;
+}
+.navbar__item + .navbar__item{
+padding: 0 0 0 70px;
+}
+.navbar__link{
+ color: #373832;
+}
+.navbar__link:hover{
+color: #d70a53;
+}
