@@ -7,14 +7,17 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+		<link rel="icon" href="img/logo.svg" sizes="any" type="image/svg+xml"> 
 </head>
 <body>
 	<header class="header">
 		<div class="header__left">
 			<div class="header__info"> 
+			<a class="header__link" href="index.html">	
 				<img class="header__logo" src="img/logo.svg" alt="Векторный логотип" border=”0”>
+			</a>
 				<div class="logo__text">
-					<a class="header__name" href="index.html">VERTIGO</a>
+					<a class="header__link text" href="index.html">VERTIGO</a>
 					<h2 class="header__text">Головокружительное пространство для творчества</h2>  
 				</div>	
 			</div>
@@ -23,16 +26,16 @@
 			<nav class="navbar">
 				<ul class="navbar__list">
 					<li class="navbar__item">
-						<a class="navbar__link" href="index.html">о нас</a>
+						<a class="navbar__link" href="index.html">главная</a>
 					</li>
 					<li class="navbar__item"> 
-						<a class="navbar__link" href="#">выставки</a>
+						<a class="navbar__link" href="aboutus.html">о нас</a>
 					</li>
 					<li class="navbar__item">
 						<a class="navbar__link" href="#">новости</a>
 					</li>
 					<li class="navbar__item">
-						<a class="navbar__link" href="#">партнеры</a>
+						<a class="navbar__link" href="#">выставки</a>
 					</li>
 					<li class="navbar__item">
 						<a class="navbar__link" href="contacts.html">контакты</a>
@@ -44,67 +47,88 @@
 
 	<div class="content">
 		<h1 class="content__name">Контакты</h1>
-		<h2>Галерея современного белорусского и зарубежного исксства “VERTIGO”.</h2>
-		<ul class="content__place">
-			<li class="content__p">Беларусь, Минск
-				ул. Октябрьская, 19
-			(ст. м. Первомайская)</li>
-		</ul>
-		<ul class="content__phone">
-			<li class="content__p">+375 29 366 75 16
-			info@vertigogallery.by</li>
-		</ul>
-		<ul class="content__arenda">
-			<li class="content__p">По вопросам аренды
-				Клюй Александра Игоревна, главный администратор:
-			+375 25 906 96 65, vs@Vertigogallery.by</li>
-		</ul>
-		<ul class="content__time">
-			<li class="content__p">Режим работы:
-				понедельник-воскресенье
-			12:00 - 21:00</li>
-		</ul>
-		<ul class="content__info">
-			<li class="content__p">Также на территории галереи работает бар
-			с авторскими напитками, десертами и ланчами.</li>
-			<li class="content__p">Время работы бара:
-				вторник-воскресенье
-				с 12:00 до 21:00 
-			Ланчи готовим до 16:00.</li>
-		</ul>
-		<div class="cart"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2351.283481852323!2d27.570104515859082!3d53.89116518009681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfce2e5c4321%3A0xd1c456e6f32e810f!2z0YPQuy4g0J7QutGC0Y_QsdGA0YzRgdC60LDRjyAxOSwg0JzQuNC90YHQug!5e0!3m2!1sru!2sby!4v1646322949937!5m2!1sru!2sby" width="105%" height="472px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+		<p class="content__text">
+			Галерея современного белорусского и зарубежного исксства “VERTIGO”.
+		</p>
+		<p class="content__text">
+			Беларусь, Минск 
+			ул. Октябрьская, 19
+			(ст. м. Первомайская)
+		</p>
+		<p class="content__text">
+			+375 29 366 75 16
+			info@vertigogallery.by
+		</p>
+		<p class="content__text">
+			По вопросам аренды
+			Клюй Александра Игоревна, главный администратор:
+			+375 25 906 96 65, vs@Vertigogallery.by
+		</p>
+		<p class="content__text">
+			Режим работы:
+			понедельник-воскресенье
+			12:00 - 21:00		</p>
+		<div class="content__section">	
+			<div class="section__left">
+				<p class="content__text">Также на территории галереи работает бар
+					с авторскими напитками, десертами и ланчами.
+				</p>
+				<p class="content__text">
+					Время работы бара:
+					вторник-воскресенье
+					с 12:00 до 21:00 
+					Ланчи готовим до 16:00.
+				</p>
+			</div class="section__right">
+			<div class="content__form">
+					<form class="form" name="mail" method="post" action="inputMail.php">
+					<label class="form__text">
+						В музее регулярно проводятся лекции и семинары о современном искусстве. Вы можете получать всю информацию на Вашу почту.
+						<div class="button__form">
+							<input class="text__area" type="text" size="20" placeholder="example@email.com">
+						<input class="submit__button" type="submit" value="Отправить">
+					</div>
+					</label>
+					</form>
+				</div>
+		</div>
+		</div>
+				<div class="cart"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2351.283481852323!2d27.570104515859082!3d53.89116518009681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfce2e5c4321%3A0xd1c456e6f32e810f!2z0YPQuy4g0J7QutGC0Y_QsdGA0YzRgdC60LDRjyAxOSwg0JzQuNC90YHQug!5e0!3m2!1sru!2sby!4v1646322949937!5m2!1sru!2sby" width="105%" height="472px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 		</div>
 	</div>
 
-
-	<footer class="footer">
+<footer class="footer">
+	<div class="footer__networks">
 		<ul class="footer__list">
-			<li class="footer__item">
-				<a class="footer__link" href="#">
-					vk
-				</a>
-			</li>
-			<li class="footer__item">
-				<a class="footer__link" href="#">
-					in
-				</a>
-			</li>
-			<li class="footer__item">
-				<a class="footer__link" href="#">
-					yt
-				</a>
-			</li>
-			<li class="footer__item">
-				<a class="footer__link" href="#">
-					tt
-				</a>
-			</li>
-		</ul>
-		<div class="footer__info">
-			Мiнск, вул. Кастрычніцкая, 19
-			+375 29 366 75 16
-			info@vertigogallery.by
-		</div>
-	</footer>
+		<li class="footer__item">
+			<a class="footer__link" href="#">
+				<img class="networks__img" src="img/inst.svg" alt="inst">
+			</a>
+		</li>
+		<li class="footer__item">
+			<a class="footer__link" href="#">
+				<img class="networks__img" src="img/fb.svg" alt="fb">
+			</a>
+		</li>
+		<li class="footer__item">
+			<a class="footer__link" href="#">
+				<img class="networks__img" src="img/yt.svg" alt="yt">
+			</a>
+		</li>
+		<li class="footer__item">
+			<a class="footer__link" href="#">
+				<img class="networks__img" src="img/tg.svg" alt="tg">
+			</a>
+		</li>
+	</ul>
+</div>
+	<div class="footer__info">
+		<ul class="footer__info__list">
+		<li class="footer__line">	Мiнск, вул. Кастрычніцкая, 19</li>
+		<li class="footer__line">	+375 29 366 75 16</li>
+		<li class="footer__line">	info@vertigogallery.by</li>
+	</ul>
+	</div>
+</footer>
 </body>
 </html>

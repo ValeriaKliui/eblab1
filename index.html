@@ -3,23 +3,21 @@
 <head><meta charset="UTF-8">
 	<title>VERTIGO - Картинная галерея</title>
 	<link rel="stylesheet" href="css/css_reset.css">
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/index.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 	<link rel="icon" href="img/logo.svg" sizes="any" type="image/svg+xml"> 
 </head>
 <body>
-		<content class="gallery">	
-		<div class="gallery__img"></div>
-	</content>
-	
 	<header class="header">
 		<div class="header__left">
 			<div class="header__info"> 
-				<img class="header__logo" src="img/logo.svg" alt="Векторный логотип" border=”0”>
+				<a class="header__link" href="index.html">	
+					<img class="header__logo" src="img/logo.svg" alt="Векторный логотип" border=”0”>
+				</a>
 				<div class="logo__text">
-					<a class="header__name" href="index.html">VERTIGO</a>
+					<a class="header__link text" href="index.html">VERTIGO</a>
 					<h2 class="header__text">Головокружительное пространство для творчества</h2>  
 				</div>	
 			</div>
@@ -28,16 +26,16 @@
 			<nav class="navbar">
 				<ul class="navbar__list">
 					<li class="navbar__item">
-						<a class="navbar__link" href="index.html">о нас</a>
+						<a class="navbar__link" href="index.html">главная</a>
 					</li>
 					<li class="navbar__item"> 
-						<a class="navbar__link" href="#">выставки</a>
+						<a class="navbar__link" href="aboutus.html">о нас</a>
 					</li>
 					<li class="navbar__item">
 						<a class="navbar__link" href="#">новости</a>
 					</li>
 					<li class="navbar__item">
-						<a class="navbar__link" href="#">партнеры</a>
+						<a class="navbar__link" href="#">выставки</a>
 					</li>
 					<li class="navbar__item">
 						<a class="navbar__link" href="contacts.html">контакты</a>
@@ -55,40 +53,102 @@
 				<li class="aside__item">Работаем ежедневно с 12:00 до 21:00.</li>
 			</ul>
 		</div>
-		<a class="button__link" href="#">
+		<a class="button__link" href="#" target="_blank">
 			<button class="button" name="button">
 				Записаться на экскурсию
 			</button>
 		</a>
 	</aside>
 
+	<content class="gallery">	
+		<div class="gallery__img"></div>
+
+		<div class="gallery__section">
+			<div class="line"></div>
+			<div class="section">
+
+				<div class="expositions">
+					<div class="expositions__aside">
+						<form class="expositions__filter">
+							<label class="exposition__name">Текущие экспозиции</label>
+							<div class="exposition__item">
+								<input class="filter__input" type="checkbox" name="expositions" value="Риджионализм" id="Риджионализм">
+								<label class="filter__label" for="Риджионализм">
+									Риджионализм							
+								</label>
+							</div>
+							<div class="exposition__item">
+								<input class="filter__input" type="checkbox" name="expositions" value="Абстрактный экспрессионизм" id="Абстрактный экспрессионизм">
+								<label class="filter__label" for="Абстрактный экспрессионизм">
+									Абстрактный экспрессионизм							
+								</label>
+							</div>
+							<div class="exposition__item">
+								<input class="filter__input" type="checkbox" name="expositions" value="Фигуративный экспрессионизм" id="Фигуративный экспрессионизм">
+								<label class="filter__label" for="Фигуративный экспрессионизм">
+									Фигуративный экспрессионизм							
+								</label>
+							</div>
+							<div class="exposition__item">
+								<input class="filter__input" type="checkbox" name="expositions" value="КОБРА" id="КОБРА">
+								<label class="filter__label" for="КОБРА">
+									КОБРА							
+								</label>
+							</div>
+							<div class="exposition__item">
+								<input class="filter__input" type="checkbox" name="expositions" value="Antipodeans" id="Antipodeans">
+								<label class="filter__label" for="Antipodeans">
+									Antipodeans							
+								</label>
+							</div>
+							<input class="submit__button" type="submit" value="Применить">
+						</form>
+					</div>
+					<div class="expositions__gallery">
+						<a href="#">
+							<img class="arrow" src="img/arrow-left.png" alt="">
+						</a>
+						<img class="exposition__photo" src="img/gallery__photo.png" alt="">
+						<a href="#">
+							<img class="arrow" src="img/arrow-right.png" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</content>
+
 	<footer class="footer">
-		<ul class="footer__list">
-			<li class="footer__item">
-				<a class="footer__link" href="#">
-					vk
-				</a>
-			</li>
-			<li class="footer__item">
-				<a class="footer__link" href="#">
-					in
-				</a>
-			</li>
-			<li class="footer__item">
-				<a class="footer__link" href="#">
-					yt
-				</a>
-			</li>
-			<li class="footer__item">
-				<a class="footer__link" href="#">
-					tt
-				</a>
-			</li>
-		</ul>
+		<div class="footer__networks">
+			<ul class="footer__list">
+				<li class="footer__item">
+					<a class="footer__link" href="#">
+						<img class="networks__img" src="img/inst.svg" alt="inst">
+					</a>
+				</li>
+				<li class="footer__item">
+					<a class="footer__link" href="#">
+						<img class="networks__img" src="img/fb.svg" alt="fb">
+					</a>
+				</li>
+				<li class="footer__item">
+					<a class="footer__link" href="#">
+						<img class="networks__img" src="img/yt.svg" alt="yt">
+					</a>
+				</li>
+				<li class="footer__item">
+					<a class="footer__link" href="#">
+						<img class="networks__img" src="img/tg.svg" alt="tg">
+					</a>
+				</li>
+			</ul>
+		</div>
 		<div class="footer__info">
-			Мiнск, вул. Кастрычніцкая, 19
-			+375 29 366 75 16
-			info@vertigogallery.by
+			<ul class="footer__info__list">
+				<li class="footer__line">	Мiнск, вул. Кастрычніцкая, 19</li>
+				<li class="footer__line">	+375 29 366 75 16</li>
+				<li class="footer__line">	info@vertigogallery.by</li>
+			</ul>
 		</div>
 	</footer>
 </body>

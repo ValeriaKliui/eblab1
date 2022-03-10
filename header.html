@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head><meta charset="UTF-8">
-<title>VERTIGO - Картинная галерея</title>
-<link rel="stylesheet" href="css/css_reset.css">
-<link rel="stylesheet" href="css/header.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-<link rel="icon" href="img/logo.svg" sizes="any" type="image/svg+xml"> 
+	<title>VERTIGO - Картинная галерея</title>
+	<link rel="stylesheet" href="css/css_reset.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+	<link rel="icon" href="img/logo.svg" sizes="any" type="image/svg+xml"> 
 </head>
 <body>
 	<header class="header">
 		<div class="header__left">
 			<div class="header__info"> 
-	   	<img class="header__logo" src="img/logo.svg" alt="Векторный логотип" border=”0”>
-			 <div class="logo__text">
-	   	<a class="header__name" href="#">VERTIGO</a>
-	 	  <h2 class="header__text">Головокружительное пространство для творчества</h2>  
-	 	 </div>	
+				<img class="header__logo" src="img/logo.svg" alt="Векторный логотип" border=”0”>
+				<div class="logo__text">
+					<a class="header__name" href="#">VERTIGO</a>
+					<h2 class="header__text">Головокружительное пространство для творчества</h2>  
+				</div>	
+			</div>
 		</div>
-	</div>
-			<div class="header__right">
-				<nav class="navbar">
+		<div class="header__right">
+			<nav class="navbar">
 				<ul class="navbar__list">
 					<li class="navbar__item">
 						<a class="navbar__link" href="#">о нас</a>
@@ -40,6 +40,86 @@
 					</li>
 				</ul>
 			</nav>
-			</div>
+		</div>
 	</header>
+	
+	<div class="content">	
+		<div class="content__grid">
+			<div class="content__block">
+				<h2 class="section__name">О нас. </h2>
+				<p class="section__text__left">
+					VERTIGO — это независимая, открытая культурная площадка и команда, создающая условия для устойчивого развития, взаимодействия и обмена опытом представителей современного искусства, культуры и гражданского общества.
+					<p class="section__text__left text__red">
+						Каждый четверг в нашей галерее проходят бесплатные кинопоказы. Начало в 20:00.
+					</p>
+					<p class="section__text__left">
+						Но количество мест ограничено, поэтому необходима обязательная регистрация.
+					</p>
+					<p class="section__text__left">
+						Ссылка для регистрации:
+					</p>
+					<a class="section__link" href="#"> 
+						регистрация
+					</a>
+				</p>
+			</div>
+			<div class="content__block">		
+				<img class="content__photo" src="img/aboutus1.png" alt="">
+			</div>
+			<div class="content__block">
+				<img class="content__photo" src="img/aboutus2.png" alt="">
+			</div>
+			<div class="content__block text__right">
+				<p class="section__text__right">
+					В галерее регулярно проводятся лекции и семинары о современном искусстве. Среди обсуждаемых тем часто присутсвуют абстрактный экспрессионизм, американский фигуративный экспрессионизм, риджионализм, Antipodeans, КОБРА.
+				</p>
+				<p class="section__text__right">
+					Вы также можете предложить свою тему семинара или рекомендовать кандидатуру лектора, ведь мы заинтересованы в сотрудничестве с самыми разными персонами из мира искусства.
+				</p>
+				<p class="section__text__right">
+					Но не забывайте, что для посещения лекции/семинара необходима регистрация. Сделать это можно по ссылке: 
+					<a class="section__link" href="#"> 
+						регистрация.
+					</a>
+				</p>
+				<p class="section__text__right">
+					Все мероприятия бесплатные, если иное не указано в анонсе.
+				</p>
+			</div>
+			<div class="content__block">
+				<div class="text__left">
+				<p class="section__text__left text__left"> 
+					Наша галерея не имеет государственного финансирования. Мы работаем благодаря поддержке меценатов и добровольным пожертвованиям. Если Вы хотите помочь галерее в развитии, Вы можете перечислить помощь по следующим ссылкам.
+				</p>
+				<ul class="sponsors">
+					<li class="sponsors__item"> 					
+						<a class="section__link" href="#"> 
+							Patreon 
+						</a>
+					</li>
+					<li class="sponsors__item">
+						<a class="section__link" href="#"> 
+							Boosty 
+						</a>
+					</li>
+					<li class="sponsors__item">
+						<a class="section__link" href="#"> 
+							Donation Alerts
+						</a>
+					</li>
+				</ul>
+				<p class="section__text__left"> 				Вы можете получать всю информацию на вашу электронную почту. 			
+				</p></div>
+				<div class="content__form">
+					<form class="form" name="mail" method="post" action="inputMail.php">
+						<input class="text__area" type="text" size="20" placeholder="example@email.com">
+						<input class="submit__button" type="submit" value="Отправить">
+					</form>
+				</div>
+			</div>
+			<div class="content__block">
+				<img class="content__photo" src="img/aboutus3.png" alt="">	
+			</div>
+		</div>
+	</div>
 </body>
